@@ -56,6 +56,67 @@
             captionText.innerHTML = dots[slideIndex-1].alt;
         }
     </script>
+    
+    <script>
+            function openTab(evt, cityName) {
+      // Declare all variables
+      var i, tabcontent, tablinks;
+
+      // Get all elements with class="tabcontent" and hide them
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+            }
+
+      // Get all elements with class="tablinks" and remove the class "active"
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+      // Show the current tab, and add an "active" class to the link that opened the tab
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+            }
+    </script>
+    
+    
+    
+    
+    
+    
+    <script 
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+
+<script>
+    $(document).ready(function() {
+       var myElement = $('.top');
+       $(window).on('scroll', function () {
+         var st = $(this).scrollTop();
+         myElement.css({
+            'opacity': 1 - st / 600
+         });
+      });
+    });
+</script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 </head>
     
 <body>
@@ -121,7 +182,7 @@
 
             <!-- image text -->
                 <div class="caption-container">
-                    <p id="caption"></p>
+                    <p id="caption">Tribute Page</p>
                 </div>
 
             <!-- Thumbnail Images -->
@@ -182,71 +243,62 @@
         
         <div id="employ&edu"  style="height: 100%; padding-top: 60px;">
             <span onclick="openNav()">  <i class="fa fa-bars fa-2x"></i></span>
-            <div  class="containerEd">
             <h2 style="text-align: center">My Employment and Education</h2>
+            
+            <!-- Create Tab links -->
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'Beijing')">Beijing</button>
+                <button class="tablinks" onclick="openTab(event, 'Dalian')">Dalian</button>
+                <button class="tablinks" onclick="openTab(event, 'Oman')">Oman</button>
+                <button class="tablinks" onclick="openTab(event, 'Stirling')">Stirling</button>
+                <button class="tablinks" onclick="openTab(event, 'Glasgow')">Glasgow</button>
+            </div>
 
-<!-- full width images with text -->
-                <div class="mySlides">
-                    <div class="numbertext">1/5</div>
-                        <img src="images/beijing.jpg" style="width: 60%">
-                </div>
-                <div class="mySlides">
-                    <div class="numbertext">2/5</div>
-                        <img src="images/Dalian.jpg" style="width: 60%">
-                </div>
-                <div class="mySlides">
-                    <div class="numbertext">3/5</div>
-                        <img src="images/oman.jpg" style="width: 60%">
-                </div>
-                <div class="mySlides">
-                    <div class="numbertext">4/5</div>
-                        <img src="images/stirling.jpg" style="width: 60%">
-                </div>
-                <div class="mySlides">
-                    <div class="numbertext">5/5</div>
-                        <img src="images/glasgow_uni.jpg" style="width: 60%">
-                </div>
+            <!-- Create info tabs -->
+     <!-- Beijing -->
+            <div id="Beijing" class="tabcontent">
+                <h1>Beijing</h1>
+                <h2>SCROLL</h2>
+                <h2>▼</h2>
+                <p>Curriculum Developer for Peking University College.</p>
+            </div>
 
-            <!-- Previous and next buttons -->
-                <a class="prevEd" onclick="plusSlides(-1)">&#10166;</a>
-                <a class="nextEd" onclick="plusSlides(1)">&#10164;</a>
-
-            <!-- image text -->
-                <div class="caption-container">
-                    <p id="caption"></p>
-                </div>
-
- 
-                <!-- Thumbnail Images -->
-                <div class="column">
-                    <div class="row">
-                        <img class="demo cursor"  src="images/beijing.jpg" style="width: 100%" onclick="currentSlide(1)" alt="Beijing">
-                    </div>
-                    <div class="row">
-                        <img class="demo cursor"  src="images/Dalian.jpg" style="width: 100%" onclick="currentSlide(2)" alt="Dalian">
-                    </div>
-                    <div class="row"> 
-                        <img class="demo cursor"  src="images/oman.jpg" style="width: 100%" onclick="currentSlide(3)" alt="Oman">
-                    </div>
-                    <div class="row">
-                        <img class="demo cursor"  src="images/stirling.jpg" style="width: 100%" onclick="currentSlide(4)" alt="Stirling University">
-                    </div>
-                    <div class="row">
-                        <img class="demo cursor"  src="images/glasgow_uni.jpg" style="width: 100%" onclick="currentSlide(5)" alt="Glasgow University">
-                    </div>
-                </div>
-                
-                
-             </div>
-        <!-- Beijing -->
-    
     <!-- Dalian -->
+            <div id="Dalian" class="tabcontent">
+                
+                <img class="tabPhoto" src="images/Dalian.jpg" alt="Dalian">
+                <h1>Dalian</h1>
+                <h2>SCROLL</h2>
+                <h2>▼</h2>
+                <p>Curriculum Developer for Peking University College.</p>
+            </div>
     
     <!-- Oman -->
+            <div id="Oman" class="tabcontent">
+                <img class="tabPhoto" src="images/oman.jpg" alt="Oman">
+                <h1>Oman</h1>
+                <h2>SCROLL</h2>
+                <h2>▼</h2>
+                <p>Curriculum Developer for Peking University College.</p>
+            </div>
     
     <!-- Stirling -->
+            <div id="Stirling" class="tabcontent">
+                <img class="tabPhoto" src="images/stirling.jpg" alt="Stirling">
+                <h1>Stirling</h1>
+                <h2>SCROLL</h2>
+                <h2>▼</h2>
+                <p>Curriculum Developer for Peking University College.</p>
+            </div>
     
     <!-- Glasgow -->
+            <div id="Glasgow" class="tabcontent">
+                <img class="tabPhoto" src="images/glasgow_uni.jpg" alt="Glasgow">
+                <h1>Glasgow</h1>
+                <h2>SCROLL</h2>
+                <h2>▼</h2>
+                <p>Curriculum Developer<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> for Peking University College.</p>
+            </div>
     
     
     
