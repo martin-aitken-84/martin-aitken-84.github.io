@@ -1,0 +1,340 @@
+/* style background image, fixed, non scrollable */
+body {
+    background-image: url(images/keyboard.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: fixed;
+    color: floralwhite;
+    margin: 0;
+}
+ /* style side navigation bar */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1; /* Stay on top*/
+    top; 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+/* style navbar links */
+.sidenav a {
+    padding: 36px 18px 18px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: floralwhite;
+}
+
+/* style side navbar close button */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 25px;
+}
+
+/* style main page, push right when side nav is open */
+#main {
+    height: 100%;
+    transition: margin-left 0.5s;
+    padding-left: 20px;
+    overflow-y: hidden;
+}
+
+/* media query and change size if smaller than 450px */
+@media screen and (max-height: 450px) {
+    sidenav {padding-top: 15px;}
+    sidenave a {font-size: 18px;}
+} 
+
+span {
+    cursor: pointer;
+    color: floralwhite;
+}
+/* style profile*/
+
+.profile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: black 1px solid;
+}
+
+.intro {
+    display: block;
+    background-color: black;
+    font-size: 25px;
+    text-align: center;
+    padding: 3px 10px 3px 10px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about {
+    width 30%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* style slideshow gallery */
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+    height: 450px;
+    width: 60%;
+    margin-left: 20%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.block {
+    display: block;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 20%;
+    height: 150px;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+/* Education and Employment */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* style slideshow gallery */
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.containerEd {
+    position: relative;
+    height: 50%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Hide the images by default */
+.mySlidesEd {
+  display: none;
+}
+
+.block {
+    display: block;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prevEd,
+.nextEd {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  width: auto;
+  padding: 16px;
+  margin-left: 10%;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.nextEd {
+  bottom: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertextEd {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 20%;
+    height: 20%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+

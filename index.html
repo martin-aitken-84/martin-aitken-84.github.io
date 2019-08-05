@@ -1,14 +1,283 @@
 <html>
+    <!DOCTYPE html>
 <head>
-    <style>
+    <title >Homepage of Martin Aitken</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Martin Aitken">
+    <meta name="description" content="Welcome to the homepage of Martin Aitken">
+    <meta name="keywords" content="Martin Aitken homepage">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
     
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-    </style>
+      <!-- scripts to open and close side navbar (with push of main) -->
+    <script>
+        function openNav()  {
+            document.getElementById("mySideNav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            
+        }
+        function closeNav() {
+            document.getElementById("mySideNav").style.width = "0px";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+    <!-- scripts for slidehow -->
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        //next/prev controls//
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        
+        //thumbnail image control//
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
     
-    </head>
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {slideIndex =1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace("active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+    </script>
+</head>
+    
+<body>
+    
+    <!-- sidenav links -->
+    <div id="mySideNav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#home">Home</a>
+        <a href="#webDev">Web Development</a>
+        <a href="#portfolio">My Portfolio</a>
+        <a href="#employ&edu">Employment and Education</a>
+    </div>
+    
+   <!-- intro page-->
+    
+    <div id="main">
+        <div id="home" style="height: 100%; padding-top: 60px;"> 
+            <span onclick="openNav()">  <i class="fa fa-bars fa-2x"></i></span>
+            
+            <h1 style="text-align: center">Welcome to my website</h1>
+            <img class="profile" src="images/Martin.jpg">
+            
+            <h2 class="intro">Martin Aitken</h2>
+            <h3 class="about">Web developer</h3>
+            <p class="about">Hello, my name is Martin Aitken.  I am a web developer from, Glasgow, UK.  This website is my resume, and a collection of my web pages.
+        </div>
+    
+    <!-- WebDev -->
+        
+    <!-- Portfolio -->
+        <!-- container for the image gallery -->
+       
+        <div id="portfolio"  style="height: 100%; padding-top: 60px;">
+            <span onclick="openNav()">  <i class="fa fa-bars fa-2x"></i></span>
+            <div  class="container">
+            <h2 style="text-align: center">My Portfolio</h2>
 
+            <!-- full width images with text -->
+                <div class="mySlides block">
+                    <div class="numbertext">1/5</div>
+                        <img src="images/01_tribute.PNG" style="width: 100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">2/5</div>
+                        <img src="images/02_survey.PNG" style="width: 100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">3/5</div>
+                        <img src="images/03_product.PNG" style="width: 100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">4/5</div>
+                        <img src="images/04_techDoc.PNG" style="width: 100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">5/5</div>
+                        <img src="images/05_portfolio.PNG" style="width: 100%">
+                </div>
 
-    <h1>Thank You Matthew!!</h1>
-    <img src="images/matt.jpg">
+            <!-- Previous and next buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- image text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+            <!-- Thumbnail Images -->
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor"  src="images/01_tribute.PNG" style="width: 100%" onclick="currentSlide(1)" alt="Tribute Page">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor"  src="images/02_survey.PNG" style="width: 100%" onclick="currentSlide(2)" alt="Survey">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor"  src="images/03_product.PNG" style="width: 100%" onclick="currentSlide(3)" alt="Product Landing Page">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor"  src="images/04_techDoc.PNG" style="width: 100%" onclick="currentSlide(4)" alt="Technical Documentation Page">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor"  src="images/05_portfolio.PNG" style="width: 100%" onclick="currentSlide(5)" alt="Portfolio">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     
+   <!-- Employment and Education-->
+        
+        <div id="employ&edu"  style="height: 100%; padding-top: 60px;">
+            <span onclick="openNav()">  <i class="fa fa-bars fa-2x"></i></span>
+            <div  class="containerEd">
+            <h2 style="text-align: center">My Employment and Education</h2>
+
+<!-- full width images with text -->
+                <div class="mySlides">
+                    <div class="numbertext">1/5</div>
+                        <img src="images/beijing.jpg" style="width: 60%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">2/5</div>
+                        <img src="images/Dalian.jpg" style="width: 60%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">3/5</div>
+                        <img src="images/oman.jpg" style="width: 60%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">4/5</div>
+                        <img src="images/stirling.jpg" style="width: 60%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">5/5</div>
+                        <img src="images/glasgow_uni.jpg" style="width: 60%">
+                </div>
+
+            <!-- Previous and next buttons -->
+                <a class="prevEd" onclick="plusSlides(-1)">&#10166;</a>
+                <a class="nextEd" onclick="plusSlides(1)">&#10164;</a>
+
+            <!-- image text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+ 
+                <!-- Thumbnail Images -->
+                <div class="column">
+                    <div class="row">
+                        <img class="demo cursor"  src="images/beijing.jpg" style="width: 100%" onclick="currentSlide(1)" alt="Beijing">
+                    </div>
+                    <div class="row">
+                        <img class="demo cursor"  src="images/Dalian.jpg" style="width: 100%" onclick="currentSlide(2)" alt="Dalian">
+                    </div>
+                    <div class="row"> 
+                        <img class="demo cursor"  src="images/oman.jpg" style="width: 100%" onclick="currentSlide(3)" alt="Oman">
+                    </div>
+                    <div class="row">
+                        <img class="demo cursor"  src="images/stirling.jpg" style="width: 100%" onclick="currentSlide(4)" alt="Stirling University">
+                    </div>
+                    <div class="row">
+                        <img class="demo cursor"  src="images/glasgow_uni.jpg" style="width: 100%" onclick="currentSlide(5)" alt="Glasgow University">
+                    </div>
+                </div>
+                
+                
+             </div>
+        <!-- Beijing -->
+    
+    <!-- Dalian -->
+    
+    <!-- Oman -->
+    
+    <!-- Stirling -->
+    
+    <!-- Glasgow -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</body>  
 </html>
