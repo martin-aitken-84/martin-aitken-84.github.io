@@ -31,7 +31,8 @@ body {
 }
 
 .sidenav a:hover {
-    color: floralwhite;
+    background-color: black;
+    color: white;
 }
 
 /* style side navbar close button */
@@ -48,7 +49,7 @@ body {
     height: 100%;
     transition: margin-left 0.5s;
     padding-left: 20px;
-    overflow-y: hidden;
+ 
 }
 
 /* media query and change size if smaller than 450px */
@@ -61,6 +62,10 @@ span {
     cursor: pointer;
     color: floralwhite;
 }
+
+
+
+
 /* style profile*/
 
 .profile {
@@ -196,72 +201,28 @@ img {
 }
 
 
-/* Education and Employment */
-
-.tab {
-    float: left;
-    border: 1px solid #ccc;
-    background-color: rgba(0, 0, 0, 0.4);
-    width: 10%;
-    height: 80%;
-    margin-left: 25%;
+#beijing {
+    background: linear-gradient(rgba(255, 255, 255, 0), 
+        rgba(255, 255, 255, 0)), url(images/beijing.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed !important;
+    background-size: 100% !important;
+    background-position: center top !important;
+    padding: 1rem;
+    padding-top: 45%;
+    color: #fff;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.tab button {
-    display: block;
-    background-color: inherit;
-    color: floralwhite;
-    padding: 22px 16px;
-    width: 100%;
-    border: none;
-    outline: none;
-    text-align: left;
-    cursor: pointer;
-    transition: 0.3s;
+#education h1 {
+	text-shadow: 0 0 5px rgba(0,0,0,0.5);
+	font-size: 4rem; 
+    color: #fff;
+	line-height: 1; 
+    position: absolute;
+	top: 20%;
 }
-
-.tab button: hover {
-    background-color: rgba(0, 0, 0, 1);
-}
-
-.tab button: active {
-    background-color: rgba(0, 0, 0, 1);
-}
-
-.tabcontent {
-    float: left;
-    padding: 0px;
-    border: 1px solid #ccc;
-    width: 40%;
-    border-left: none;
-    height: 80%;
-    overflow-y: scroll; 
-}
-
-.tabcontent h1 {
-    color: floralwhite;
-    font-size: 4em;
-}
-
-.tabcontent h2 {
-    text-align: center;
-    color: floralwhite;
-    font-size: 1.5em;
-}
-
-
-
-
-
-.imagescroll {
-    
-    width: 100%;
-    height: 100%;
-    background
-}
-
-
-
-
 
 

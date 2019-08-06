@@ -1,0 +1,144 @@
+<html>
+    <!DOCTYPE html>
+<head>
+    <title >Homepage of Martin Aitken</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Martin Aitken">
+    <meta name="description" content="Welcome to the homepage of Martin Aitken">
+    <meta name="keywords" content="Martin Aitken homepage">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>  
+<body> 
+<!-- sidenav links -->
+    <div id="mySideNav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="/index.html">Home</a>
+        <a href="/02_webDev.html">Web Development</a>
+        <a href="/03_portfolio.html">My Portfolio</a>
+        <a href="/04_history.html">Employment and Education</a>
+    </div>
+    
+<!-- Portfolio -->
+<!-- container for the image gallery -->
+  <div id="main">     
+        <div id="portfolio"  style="height: 100%; padding-top: 60px;">
+            <span onclick="openNav()">  <i class="fa fa-bars fa-2x" style="position:fixed; top: 12%;"></i></span>
+            <div  class="container">
+            <h2 style="text-align: center">My Portfolio</h2>
+
+            <!-- full width images with text -->
+                <div class="mySlides block">
+                    <div class="numbertext">1/5</div>
+                        <img src="images/01_tribute.PNG" style="width: 100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">2/5</div>
+                        <img src="images/02_survey.PNG" style="width: 100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">3/5</div>
+                        <img src="images/03_product.PNG" style="width: 100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">4/5</div>
+                        <img src="images/04_techDoc.PNG" style="width: 100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">5/5</div>
+                        <img src="images/05_portfolio.PNG" style="width: 100%">
+                </div>
+
+<!-- Previous and next buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+<!-- image text -->
+                <div class="caption-container">
+                    <p id="caption">Tribute Page</p>
+                </div>
+
+<!-- Thumbnail Images -->
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor"  src="images/01_tribute.PNG" style="width: 100%" onclick="currentSlide(1)" alt="Tribute Page">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor"  src="images/02_survey.PNG" style="width: 100%" onclick="currentSlide(2)" alt="Survey">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor"  src="images/03_product.PNG" style="width: 100%" onclick="currentSlide(3)" alt="Product Landing Page">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor"  src="images/04_techDoc.PNG" style="width: 100%" onclick="currentSlide(4)" alt="Technical Documentation Page">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor"  src="images/05_portfolio.PNG" style="width: 100%" onclick="currentSlide(5)" alt="Portfolio">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!-- scripts to open and close side navbar (with push of main) -->
+        <script>
+        function closeNav() {
+            document.getElementById("mySideNav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+        
+        function openNav()  {
+            document.getElementById("mySideNav").style.width = "20%";
+            document.getElementById("main").style.marginLeft = "20%";  
+        }
+                
+       openNav();
+    </script>
+<!-- scripts for slidehow -->
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        //next/prev controls//
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        
+        //thumbnail image control//
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+    
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {slideIndex =1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace("active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+    </script>
+    
+</body>
+</html>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

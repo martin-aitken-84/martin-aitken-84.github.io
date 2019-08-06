@@ -10,31 +10,8 @@
     
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <script>
-            function openTab(evt, cityName) {
-      // Declare all variables
-      var i, tabcontent, tablinks;
-
-      // Get all elements with class="tabcontent" and hide them
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-            }
-
-      // Get all elements with class="tablinks" and remove the class "active"
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-
-      // Show the current tab, and add an "active" class to the link that opened the tab
-      document.getElementById(cityName).style.display = "block";
-      evt.currentTarget.className += " active";
-            }
-    </script>
-</head>   
-<body>     
+</head>
+<body>
 <!-- sidenav links -->
     <div id="mySideNav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -43,25 +20,26 @@
         <a href="/03_portfolio.html">My Portfolio</a>
         <a href="/04_history.html">Employment and Education</a>
     </div>
-    
-<!-- intro page-->
+
+<!-- education-->
     <div id="main">
-   
-            <div id="home" style="height: 100%; padding-top: 60px;"> 
-            
+         <div id="wedDev"  style="height: 100%; padding-top: 60px;">
             <span onclick="openNav()">  <i class="fa fa-bars fa-2x" style="position:fixed; top: 12%;"></i></span>
-            
-            <h1 style="text-align: center">Welcome to my website</h1>
-            <img class="profile" src="images/Martin.jpg">
-            
-            <h2 class="intro">Martin Aitken</h2>
-            <h3 class="about">Web developer</h3>
-            <p class="about">Hello, my name is Martin Aitken.  I am a web developer from, Glasgow, UK.  This website is my resume, and a collection of my web pages.
+            <h2 style="text-align: center">WebDev
         </div>
-   </div>
+        
+        
+        
+        
+        
+        
+        
+    </div>
     
+    
+
 <!-- scripts to open and close side navbar (with push of main) -->
-        <script>
+    <script>
         function closeNav() {
             document.getElementById("mySideNav").style.width = "0";
             document.getElementById("main").style.marginLeft = "0";
@@ -73,6 +51,6 @@
         }
                 
        openNav();
-    </script>  
-</body>  
-</html>
+    </script>   
+    
+</body>
