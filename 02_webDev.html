@@ -7,10 +7,10 @@
     <meta name="description" content="Welcome to the homepage of Martin Aitken">
     <meta name="keywords" content="Martin Aitken homepage">
     <meta name="viewport" content="width=device-width, initial-scale = 1.0">
-    
+    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+</head>  
 <body>
 <!-- sidenav links -->
     <div id="mySideNav" class="sidenav">
@@ -21,22 +21,43 @@
         <a href="/04_history.html">Employment and Education</a>
     </div>
 
-<!-- education-->
-    <div id="main">
-         <div id="wedDev"  style="height: 100%; padding-top: 60px;">
-            <span onclick="openNav()">  <i class="fa fa-bars fa-2x" style="position:fixed; top: 12%;"></i></span>
-            <h2 style="text-align: center">WebDev
-        </div>
-        
-        
-        
-        
-        
-        
-        
+<!-- hamburger and heading-->
+<div id="main">
+    <div id="webDev">
+        <span onclick="openNav()">  <i class="fa fa-bars fa-2x" style="position:fixed; top: 25px; color: white;"></i></span>
+        <h1 style="text-align: center">My Web Development</h1>
     </div>
-    
-    
+    <div id="WedDev History">
+        <h2 style="text-align: center"> Courses completed</h2>
+        
+<!-- development history grid -->        
+        <div class="webdev-history-grid">
+            <div class="grid-item-margin"></div>
+                <!-- Freecodecamp --> 
+                <div class="grid-item-icon"><i class="fa fa-free-code-camp" style="font-size: 36px;"></i></div>
+                <div>
+                    <h2>FreeCodeCamp</h2>
+                    <ul>
+                        <li>Responsive Web Design Certification (300 hours)</li>
+                        <li>Javascript Algorithms And Data Structures Certification (300 hours)</li>
+                        <li>Front End Libraries Certification (300 hours)</li>
+                    </ul>
+                </div>
+            <div class="grid-item-margin"></div>
+            <div class="grid-item-margin"></div>
+            <!-- codeAcademy --> 
+            <div class="grid-item-icon"><img src="images/codeAcademy.jfif" height="36px"; width="46px;"></div>
+            <div class="grid-item-desc"><h2>Code Academy - Web Development</h2>  
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                </ul>
+            </div>
+        </div>      
+    </div>             
+</div>
 
 <!-- scripts to open and close side navbar (with push of main) -->
     <script>
@@ -52,5 +73,4 @@
                 
        openNav();
     </script>   
-    
 </body>

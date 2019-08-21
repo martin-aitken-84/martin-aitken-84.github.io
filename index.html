@@ -7,7 +7,7 @@
     <meta name="description" content="Welcome to the homepage of Martin Aitken">
     <meta name="keywords" content="Martin Aitken homepage">
     <meta name="viewport" content="width=device-width, initial-scale = 1.0">
-    
+    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
@@ -34,7 +34,7 @@
             }
     </script>
 </head>   
-<body>     
+<body>   
 <!-- sidenav links -->
     <div id="mySideNav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -43,25 +43,53 @@
         <a href="/03_portfolio.html">My Portfolio</a>
         <a href="/04_history.html">Employment and Education</a>
     </div>
-    
+
 <!-- intro page-->
-    <div id="main">
-   
-            <div id="home" style="height: 100%; padding-top: 60px;"> 
-            
-            <span onclick="openNav()">  <i class="fa fa-bars fa-2x" style="position:fixed; top: 12%;"></i></span>
+<div id="main">
+    <!-- hamburger, picture and intro --> 
+        <div id="home"> 
+            <span onclick="openNav()">  <i class="fa fa-bars fa-2x" style="position:fixed; top: 25px; color: white;"></i></span>
             
             <h1 style="text-align: center">Welcome to my website</h1>
             <img class="profile" src="images/Martin.jpg">
             
-            <h2 class="intro">Martin Aitken</h2>
+            <h2 id="intro">Martin Aitken</h2>
             <h3 class="about">Web developer</h3>
             <p class="about">Hello, my name is Martin Aitken.  I am a web developer from, Glasgow, UK.  This website is my resume, and a collection of my web pages.
         </div>
-   </div>
+   
+<!-- links to other websites, email and mobile -->
+    <div id="profile">
+        <div id="profile-links"> 
+            <h2 class="section-header">For more information...</h2>
+        </div>
+         <div id="profile-links"> 
+            <div>
+                <a href="https://codepen.io/martin_aitken_84/" target="_blank" class="link-button">
+                    <i class="fa fa-codepen"><br>   codepen</i>
+                </a>
+            </div>
+            <div>
+                <a href="https://github.com/martin-aitken-84" target="_blank" class="link-button">
+                    <i class="fa fa-github"><br>   github</i>
+                </a>
+            </div>
+            <div>
+                <a href="mailto:martin_aitken_84@yahoo.co.uk" class="link-button">
+                    <i class="fa fa-envelope"><br>   email me</i>
+                </a>
+            </div>
+            <div>
+                <a href="tel:+86 155 6695 3952" class="link-button">
+                    <i class="fa fa-mobile"><br>   call me</i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>   
     
 <!-- scripts to open and close side navbar (with push of main) -->
-        <script>
+    <script>
         function closeNav() {
             document.getElementById("mySideNav").style.width = "0";
             document.getElementById("main").style.marginLeft = "0";

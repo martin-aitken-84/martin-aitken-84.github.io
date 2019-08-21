@@ -7,7 +7,7 @@
     <meta name="description" content="Welcome to the homepage of Martin Aitken">
     <meta name="keywords" content="Martin Aitken homepage">
     <meta name="viewport" content="width=device-width, initial-scale = 1.0">
-    
+    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>  
@@ -23,32 +23,33 @@
     
 <!-- Portfolio -->
 <!-- container for the image gallery -->
-  <div id="main">     
-        <div id="portfolio"  style="height: 100%; padding-top: 60px;">
-            <span onclick="openNav()">  <i class="fa fa-bars fa-2x" style="position:fixed; top: 12%;"></i></span>
+  <div id="main"> 
+      <!-- hamburger and heading --> 
+        <div id="portfolio">
+            <span onclick="openNav()">  <i class="fa fa-bars fa-2x" style="position:fixed; top: 25px; color: white;"></i></span>
             <div  class="container">
-            <h2 style="text-align: center">My Portfolio</h2>
+            <h1 style="text-align: center">My Portfolio</h1>
 
-            <!-- full width images with text -->
+            <!-- full width slides with text -->
                 <div class="mySlides block">
                     <div class="numbertext">1/5</div>
-                        <img src="images/01_tribute.PNG" style="width: 100%">
+                        <a href="https://codepen.io/martin_aitken_84/full/zXZYoG" target="_blank"><img src="images/01_tribute.PNG" style="width: 100%"></a>
                 </div>
                 <div class="mySlides">
                     <div class="numbertext">2/5</div>
-                        <img src="images/02_survey.PNG" style="width: 100%">
+                        <a href="https://codepen.io/martin_aitken_84/full/GLmZqR" target="_blank"><img src="images/02_survey.PNG" style="width: 100%"></a>
                 </div>
                 <div class="mySlides">
                     <div class="numbertext">3/5</div>
-                        <img src="images/03_product.PNG" style="width: 100%">
+                        <a href="https://codepen.io/martin_aitken_84/full/GbgxRJ" target="_blank"><img src="images/03_product.PNG" style="width: 100%"></a>
                 </div>
                 <div class="mySlides">
                     <div class="numbertext">4/5</div>
-                        <img src="images/04_techDoc.PNG" style="width: 100%">
+                    <a href="https://codepen.io/martin_aitken_84/full/jjremx" target="_blank"><img src="images/04_techDoc.PNG" style="width: 100%"></a>
                 </div>
                 <div class="mySlides">
                     <div class="numbertext">5/5</div>
-                        <img src="images/05_portfolio.PNG" style="width: 100%">
+                    <a href="https://codepen.io/martin_aitken_84/full/zVBJMJ" target="_blank"><img src="images/05_portfolio.PNG" style="width: 100%"></a>
                 </div>
 
 <!-- Previous and next buttons -->
@@ -96,6 +97,7 @@
                 
        openNav();
     </script>
+    
 <!-- scripts for slidehow -->
     <script>
         var slideIndex = 1;
@@ -129,7 +131,6 @@
             captionText.innerHTML = dots[slideIndex-1].alt;
         }
     </script>
-    
 </body>
 </html>
     
