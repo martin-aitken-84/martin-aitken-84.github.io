@@ -11,9 +11,30 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-    <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
-</head>
-<body>
+    <script>
+            function openTab(evt, cityName) {
+      // Declare all variables
+      var i, tabcontent, tablinks;
+
+      // Get all elements with class="tabcontent" and hide them
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+            }
+
+      // Get all elements with class="tablinks" and remove the class "active"
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+      // Show the current tab, and add an "active" class to the link that opened the tab
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+            }
+    </script>
+</head>   
+<body>   
 <!-- sidenav links -->
     <div id="mySideNav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -23,46 +44,30 @@
         <a href="/04_history.html">Employment and Education</a>
     </div>
 
-<!-- education-->
-    <div id="main">
-         <div id="employ&edu"  style="padding-top: 60px;">
-            <span onclick="openNav()">  <i class="fa fa-bars fa-2x" style="position:fixed; top: 12%;"></i></span>
-            <h2 style="text-align: center">My Employment and Education</h2>
+<!-- intro page-->
+<div id="main">
+    <!-- hamburger, picture and intro --> 
+        <div id="history"> 
+            <span onclick="openNav()">  <i class="fa fa-bars fa-2x" style="position:fixed; top: 25px; color: white;"></i></span>
+            
+            <h1 style="text-align: center">My Education and Employment History</h1>
+            <img class="profile" src="images/beijing.jpg">
+            
+            <h2 id="intro">Beijing</h2>
+            <h3 class="about">Curriculum developer</h3>
+            <p class="about">not yet completed
         </div>
-        <iframe id="beijing">
-            <h1>Beijing</h1>
-            <p>In my younger and more vulnerable years…asuihaduahd wgqgyqwggrewbbch buh sdfu sfbf wefu wey fweygwefy gweyfgweuf weufg weuf gweyfgwe yfgwey fweg fweoyfweyf gweuf asjfs jbhcbxyg sfhfuefhefhefhpe f7p 7 u fu fsd bhv dnv  ddf  dfj h huih iudh duh iup huf hauif geuf gweufg weffgfgf fjfhjnf dsisoifwe finfiewjfweff fn  cjcjid winefioe eijweioweh f fhiowehowef wehwiefhwe oif fihf wiefhw fwhehf ffjfifnfnf fjisd sfn fe fndufhw f wbfuw fweufhwu efweh fuwhe [uewhf wenf euf wufhwe </p>
-            <p>n my younger and more vulnerable years…asuihaduahd wgqgyqwggrewbbch buh sdfu sfbf wefu wey fweygwefy gweyfgweuf weufg weuf gweyfgwe yfgwey fweg fweoyfweyf gweuf asjfs jbhcbxyg sfhfuefhefhefhpe f7p 7 u fu fsd bhv dnv  ddf  dfj h huih iudh duh iup huf hauif geuf gweufg weffgfgf fjfhjnf dsisoifwe finfiewjfweff fn  cjcjid winefioe eijweioweh f fhiowehowef wehwiefhwe oif fihf wiefhw fwhehf ffjfifnfnf fjisd sfn fe fndufhw f wbfuw fweufhwu efweh fuwhe [uewhf wenf euf wufhwe</p>
-            <p>n my younger and more vulnerable years…asuihaduahd wgqgyqwggrewbbch buh sdfu sfbf wefu wey fweygwefy gweyfgweuf weufg weuf gweyfgwe yfgwey fweg fweoyfweyf gweuf asjfs jbhcbxyg sfhfuefhefhefhpe f7p 7 u fu fsd bhv dnv  ddf  dfj h huih iudh duh iup huf hauif geuf gweufg weffgfgf fjfhjnf dsisoifwe finfiewjfweff fn  cjcjid winefioe eijweioweh f fhiowehowef wehwiefhwe oif fihf wiefhw fwhehf ffjfifnfnf fjisd sfn fe fndufhw f wbfuw fweufhwu efweh fuwhe [uewhf wenf euf wufhwe</p>
-            <p>In my younger and more vulnerable years…asuihaduahd wgqgyqwggrewbbch buh sdfu sfbf wefu wey fweygwefy gweyfgweuf weufg weuf gweyfgwe yfgwey fweg fweoyfweyf gweuf asjfs jbhcbxyg sfhfuefhefhefhpe f7p 7 u fu fsd bhv dnv  ddf  dfj h huih iudh duh iup huf hauif geuf gweufg weffgfgf fjfhjnf dsisoifwe finfiewjfweff fn  cjcjid winefioe eijweioweh f fhiowehowef wehwiefhwe oif fihf wiefhw fwhehf ffjfifnfnf fjisd sfn fe fndufhw f wbfuw fweufhwu efweh fuwhe [uewhf wenf euf wufhwe </p>
-            <p>n my younger and more vulnerable years…asuihaduahd wgqgyqwggrewbbch buh sdfu sfbf wefu wey fweygwefy gweyfgweuf weufg weuf gweyfgwe yfgwey fweg fweoyfweyf gweuf asjfs jbhcbxyg sfhfuefhefhefhpe f7p 7 u fu fsd bhv dnv  ddf  dfj h huih iudh duh iup huf hauif geuf gweufg weffgfgf fjfhjnf dsisoifwe finfiewjfweff fn  cjcjid winefioe eijweioweh f fhiowehowef wehwiefhwe oif fihf wiefhw fwhehf ffjfifnfnf fjisd sfn fe fndufhw f wbfuw fweufhwu efweh fuwhe [uewhf wenf euf wufhwe</p>
-            <p>n my younger and more vulnerable years…asuihaduahd wgqgyqwggrewbbch buh sdfu sfbf wefu wey fweygwefy gweyfgweuf weufg weuf gweyfgwe yfgwey fweg fweoyfweyf gweuf asjfs jbhcbxyg sfhfuefhefhefhpe f7p 7 u fu fsd bhv dnv  ddf  dfj h huih iudh duh iup huf hauif geuf gweufg weffgfgf fjfhjnf dsisoifwe finfiewjfweff fn  cjcjid winefioe eijweioweh f fhiowehowef wehwiefhwe oif fihf wiefhw fwhehf ffjfifnfnf fjisd sfn fe fndufhw f wbfuw fweufhwu efweh fuwhe [uewhf wenf euf wufhwe</p>
-            <p>In my younger and more vulnerable years…asuihaduahd wgqgyqwggrewbbch buh sdfu sfbf wefu wey fweygwefy gweyfgweuf weufg weuf gweyfgwe yfgwey fweg fweoyfweyf gweuf asjfs jbhcbxyg sfhfuefhefhefhpe f7p 7 u fu fsd bhv dnv  ddf  dfj h huih iudh duh iup huf hauif geuf gweufg weffgfgf fjfhjnf dsisoifwe finfiewjfweff fn  cjcjid winefioe eijweioweh f fhiowehowef wehwiefhwe oif fihf wiefhw fwhehf ffjfifnfnf fjisd sfn fe fndufhw f wbfuw fweufhwu efweh fuwhe [uewhf wenf euf wufhwe </p>
-            <p>n my younger and more vulnerable years…asuihaduahd wgqgyqwggrewbbch buh sdfu sfbf wefu wey fweygwefy gweyfgweuf weufg weuf gweyfgwe yfgwey fweg fweoyfweyf gweuf asjfs jbhcbxyg sfhfuefhefhefhpe f7p 7 u fu fsd bhv dnv  ddf  dfj h huih iudh duh iup huf hauif geuf gweufg weffgfgf fjfhjnf dsisoifwe finfiewjfweff fn  cjcjid winefioe eijweioweh f fhiowehowef wehwiefhwe oif fihf wiefhw fwhehf ffjfifnfnf fjisd sfn fe fndufhw f wbfuw fweufhwu efweh fuwhe [uewhf wenf euf wufhwe</p>
-            <p>n my younger and more vulnerable years…asuihaduahd wgqgyqwggrewbbch buh sdfu sfbf wefu wey fweygwefy gweyfgweuf weufg weuf gweyfgwe yfgwey fweg fweoyfweyf gweuf asjfs jbhcbxyg sfhfuefhefhefhpe f7p 7 u fu fsd bhv dnv  ddf  dfj h huih iudh duh iup huf hauif geuf gweufg weffgfgf fjfhjnf dsisoifwe finfiewjfweff fn  cjcjid winefioe eijweioweh f fhiowehowef wehwiefhwe oif fihf wiefhw fwhehf ffjfifnfnf fjisd sfn fe fndufhw f wbfuw fweufhwu efweh fuwhe [uewhf wenf euf wufhwe</p>
-        
-       <script id="rendered-js">
-        var nystories = document.querySelector("p").offsetTop;
-            window.onscroll = function () {
-        if (window.pageYOffset > 0) {
-        var opac = window.pageYOffset / nystories;
-            console.log(opac);
-            document.body.style.background = "linear-gradient(rgba(255, 255, 255, " + opac + "), rgba(255, 255, 255, " + opac + ")), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/times-square-perspective.jpg) no-repeat";
-        }
-    };
-    //# sourceURL=pen.js
-    </script>     
-        
-        
-        </div>
-        
-        
-        
-        
-        
-        
-        
-    </div>
+   
+
+    
+    
+    
+    
+    
+    
+    
+</div>   
+    
 <!-- scripts to open and close side navbar (with push of main) -->
     <script>
         function closeNav() {
@@ -76,7 +81,6 @@
         }
                 
        openNav();
-    </script>   
-    
-
-</body>
+    </script>  
+</body>  
+</html>
