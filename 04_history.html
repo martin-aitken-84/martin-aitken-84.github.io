@@ -51,13 +51,22 @@
             <span onclick="openNav()">  <i class="fa fa-bars fa-2x" style="position:fixed; top: 25px; color: white;"></i></span>
             
             <h1 style="text-align: center">My Education and Employment History</h1>
-            <img class="profile" src="images/beijing.jpg">
-            
-            <h2 id="intro">Beijing</h2>
-            <h3 class="about">Curriculum developer</h3>
-            <p class="about">not yet completed
         </div>
-   
+    <!-- create navpage for all jobs-->
+    
+    
+    
+    <iframe src="jobs/beijing.html" name="historyFrame"></iframe>
+    
+    
+    <!-- create iframe for jobpage to appear in-->
+        <div >
+            
+            
+
+    
+    
+        </div>
 
     
     
@@ -66,7 +75,21 @@
     
     
     
-</div>   
+    
+    
+    
+    
+    
+    
+</div>  
+    
+    <script>
+    function setURL(url){
+        document.getElementById('iframe').src = url;
+    }
+    </script>
+    
+    
     
 <!-- scripts to open and close side navbar (with push of main) -->
     <script>

@@ -128,7 +128,7 @@
         display: grid;
         grid-gap: 20px 20px;
         grid-template-columns: 10% 15% 55% 10%;  
-        
+            
     }
 
     ul {
@@ -242,16 +242,69 @@
         padding-top: 60px;
     }
 
+    iframe {
+        height: 100%;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 100px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        border: 0;
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
 
+    .iframe-head {
+        text-shadow: 0 0 5px rgba(0,0,0,0.5);
+        font-size: 3rem; 
+        color: #fff;
+        line-height: 1; 
+        text-align: left;
+}
+.iframe-h2 { 
+    margin-top: 50%;
+    text-align: center;
+    font-size: 2em;
+  
+}
 
+.iframe-span {
+    display: block;
+    text-align: center;
+    font-size: 3em;
+    
+}
 
+#beijing {
+        background-image: url(jobs/beijing.jpg);
+        margin-left: 20%;
+    }
 
+#dalian {
+        background-image: url(jobs/Dalian.jpg);
+        margin-left: 20%;
+    }
 
+#oman {
+        background-image: url(jobs/oman.jpg);
+        margin-left: 20%;
+    }
 
+#stirling {
+        background-image: url(jobs/stirling.jpg);
+        margin-left: 20%;
+    }
 
-
-
-
+#glasgow {
+        background: linear-gradient(rgba(255, 255, 255, 0), 
+		rgba(255, 255, 255, 0)), url(jobs/glasgow_uni.jpg);
+        background-repeat: no-repeat;
+        -webkit-transition: background-image 0.2s ease-in-out;
+        transition: background-image 0.2s ease-in-out;
+    }
 
 
 
